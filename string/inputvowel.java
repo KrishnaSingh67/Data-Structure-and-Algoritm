@@ -13,6 +13,6 @@ public class inputvowel {
             if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') count++;
             // we can also make the function of the  vowel
         }
-        System.out.println(count);
+        System.out.println("the count is :"+ count);
     }
 }
