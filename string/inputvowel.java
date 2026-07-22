@@ -14,5 +14,6 @@ public class inputvowel {
             // we can also make the function of the  vowel
         }
         System.out.println("the count is :"+ count);
+
     }
 }
