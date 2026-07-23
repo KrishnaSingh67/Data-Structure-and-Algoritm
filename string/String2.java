@@ -38,7 +38,8 @@ public class String2 {
         Arrays.sort(tarr);
       if (Arrays.equals(sarr,tarr)){
           System.out.println("yes it is the anagram ");
-      } else System.out.println(" not anagram ");
+      }
+      else System.out.println(" not anagram ");
 
 
     }
