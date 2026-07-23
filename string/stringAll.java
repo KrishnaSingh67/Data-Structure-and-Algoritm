@@ -25,6 +25,7 @@ public class stringAll {
 
 //        3. Return the total number of digits in a number without using any loop.
 //                Hint : Try using inbuilt to_string() function
+
          int number=980736;
          String num=Integer.toString(number);
         System.out.println(num.length());
