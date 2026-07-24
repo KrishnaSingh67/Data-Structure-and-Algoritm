@@ -1,6 +1,8 @@
 package string;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class String2 {
@@ -41,6 +43,28 @@ public class String2 {
       }
       else System.out.println(" not anagram ");
 
-
+//    . Given n strings consisting of lowercase English alphabets. Print the character that is occurring most
+//number of times.
+        String[]stA={"apple","bbbbbbbbbbbbbbbbbanana","cherry","apple"};
+        // store the frequency in the hashmap
+        Map<Character,Integer> freq=new HashMap<>();
+        //itereate through the each charecters  of the array element
+        for (String str:stA){
+            for (char c:str.toCharArray()){
+                //update the frequency in the map
+                freq.put(c,freq.getOrDefault(c,0)+1);
+            }
+        }
+        // Find the character with the highest frequency
+        char mostFrequentChar = '\0'; // default value
+        int maxFrequency = 0;
+        for (Map.Entry<Character, Integer> entry :
+                freq.entrySet()) {
+            if (entry.getValue() > maxFrequency) {
+                mostFrequentChar = entry.getKey();
+                maxFrequency = entry.getValue();
+            }
+        }
+        System.out.println(mostFrequentChar);
     }
 }
