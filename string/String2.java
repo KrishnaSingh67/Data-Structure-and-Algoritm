@@ -45,7 +45,7 @@ public class String2 {
 
 //    . Given n strings consisting of lowercase English alphabets. Print the character that is occurring most
 //number of times.
-        String[]stA={"apple","bbbbbbbbbbbbbbbbbanana","cherry","apple"};
+        String[]stA={"apple","banana","cherry","apple"};
         // store the frequency in the hashmap
         Map<Character,Integer> freq=new HashMap<>();
         //itereate through the each charecters  of the array element
