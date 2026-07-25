@@ -32,6 +32,7 @@ public class String2 {
 //        . Given two strings s and t, return true if t is an anagram of s, and false otherwise.
         String s = "physicswallah", t = "wallahphysic" ;
         if (s.length()!=t.length()){
+            System.out.println("");
             System.out.println("not a nagram");
         }
         char[]sarr=s.toCharArray();
@@ -46,6 +47,7 @@ public class String2 {
 //    . Given n strings consisting of lowercase English alphabets. Print the character that is occurring most
 //number of times.
         String[]stA={"apple","banana","cherry","apple"};
+        System.out.println("the array is :" + stA);
         // store the frequency in the hashmap
         Map<Character,Integer> freq=new HashMap<>();
         //itereate through the each charecters  of the array element
